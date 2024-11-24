@@ -7,14 +7,15 @@ public class ex1030 {
         int NC = dado.nextInt(); // Número de casos de teste
 
         for (int i = 1; i <= NC; i++) {
-            int n = dado.nextInt(); // Número de pessoas no círculo
-            int k = dado.nextInt(); // Passo para eliminar pessoas
+            System.out.println("Número de pessoas no círculo");
+            int n = dado.nextInt();
+            System.out.println("Passo para eliminar pessoas");
+            int k = dado.nextInt();
 
-            // Chama a versão iterativa da função josefo
             System.out.println("Case " + i + ": " + josefoIterativo(n, k));
         }
 
-        dado.close(); // Fecha o Scanner
+        dado.close();
     }
 
     public static int josefoIterativo(int n, int k) {
